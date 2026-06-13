@@ -1,0 +1,36 @@
+
+<form method="post">
+    {% csrf_token %}
+
+
+    <label for="">Username</label>
+    {{fm.Name}}
+    <p style="color: red;" > {{fm.Name.errors}} </p>
+
+    
+    <label for="">Email</label>
+    {{fm.Email}}
+    <p style="color: red;" > {{fm.Email.errors}} </p>
+
+
+    <label for="">Age</label>
+
+    {{fm.Age}}
+    <p style="color: red;" > {{fm.Age.errors}} </p>
+
+    <label for="">City</label>
+
+    {{fm.City}}
+    <p style="color: red;" > {{fm.City.errors}} </p>
+
+
+
+
+
+
+
+<!-- {{fm}} -->
+
+<input type="submit">
+
+</form>
